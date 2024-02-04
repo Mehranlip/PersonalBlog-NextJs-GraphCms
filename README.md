@@ -1,4 +1,4 @@
-
+<img src="https://github.com/Mehranlip/PersonalBlog-NextJs-GraphCms/assets/60979458/d420fea5-bf90-4e01-8517-8eeb33e6d4b6" />
 
 # Getting Started
 1-Go to https://hygraph.com and register <br/>
