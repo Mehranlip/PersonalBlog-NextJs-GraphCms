@@ -1,0 +1,361 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* tailwind css  */
+
+/* font face */
+
+@font-face {
+  font-family: "Kaisei Decol Bold";
+  src: url("../public/font/KaiseiDecol-Bold.woff");
+}
+
+@font-face {
+  font-family: "Kaisei Decol";
+  src: url("../public/font/KaiseiDecol-Medium.woff");
+}
+
+@font-face {
+  font-family: "Kaisei Decol Regular";
+  src: url("../public/font/KaiseiDecol-Regular.woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../public/font/Lato-Regular.woff");
+}
+
+/* end font face */
+
+/* Navbar */
+.Main_logo {
+  color: var(--general-body-text, #333);
+  font-family: Kaisei Decol;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Navbar_link {
+  color: var(--general-body-text, #333);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.button_navbar {
+  color: var(--general-body-text, #333);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  background-color: white !important;
+}
+
+/* end Navbar  */
+
+/* Landing  */
+.Landing {
+  background: var(--main-primary-one, #edecff);
+  height: fit-content;
+}
+
+.title_landing {
+  color: var(--general-body-text, #333);
+  font-family: Kaisei Decol;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.paragraph_landing {
+  color: var(--general-body-text, #333);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  /* 150% */
+}
+
+.button_landing {
+  color: var(--general-body-text, #333);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  border-left: 4px solid var(--general-body-text, #333);
+  background: var(--main-primary-three, #fdd9d3);
+}
+
+@media only screen and (max-width: 600px) {
+  .landing_image {
+    height: 50dvh !important;
+  }
+
+  .title_landing {
+    font-size: 35px;
+  }
+
+  .cat_main {
+    display: none;
+  }
+
+  .name-account {
+    font-size: 10px !important;
+  }
+
+  .title-sub {
+    font-size: 30px !important;
+  }
+}
+
+.landing_image {
+  background-image: url("../public/static-image/landing_image.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 90dvh;
+  width: 100%;
+  background-position: center;
+}
+
+/* end Landing */
+
+/* Categories */
+
+.cat_main {
+  color: var(--general-body-text, #333);
+  font-family: Kaisei Decol;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+.cat_title {
+  color: var(--general-body-text, #333);
+  font-family: Kaisei Decol;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  /* text-decoration-line: overline; */
+  border-bottom: solid 1.5px #000000;
+  padding-bottom: 3px;
+}
+
+/* end Categories */
+
+/* chosen Blog */
+.cover-gradient {
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 16.25%, rgba(0, 0, 0, 0.21) 50.62%, rgba(0, 0, 0, 0.72) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-chosen {
+  width: 100%;
+  height: 100%;
+}
+
+.title-cover {
+  color: #FFF;
+  font-family: Kaisei Decol;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.paragraph-cover {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+
+.name-account {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 150% */
+}
+
+.name-account-chosen {
+  color: #000000;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  /* 150% */
+}
+
+.title-chosen {
+  color: var(--general-body-text, #333);
+  font-family: Kaisei Decol;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.summary-shosen {
+  color: var(--general-body-text, #333);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: justify;
+  /* 150% */
+}
+
+
+
+/* end chosen Blog */
+
+/* submited blog */
+.title-sub {
+  color: var(--general-body-text, #333);
+  font-family: Kaisei Decol;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.title-post-sub {
+  color: var(--general-body-text, #333);
+  font-family: Kaisei Decol;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.paragraph-post-sub {
+  color: var(--general-body-text, #333);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.button-post-sub {
+  color: var(--general-body-text, #333);
+  font-family: Kaisei Decol;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* end submited blog */
+
+/* Footer */
+
+.footer-link {
+  color: var(--general-body-text, #333);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.copyright {
+  color: var(--general-body-text, #333);
+  font-family: Kaisei Decol;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.image-cover-post {
+  height: 200px !important;
+}
+
+/* end Footer */
+
+/* // post Detailes */
+.title-post-detail {
+  color: var(--general-body-text, #ffffff);
+  font-family: Kaisei Decol;
+  font-size: 35px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.name-account-post-detail {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.cover-post-details {
+  border-radius: 32px;
+  height: 80dvh;
+}
+
+.paragraph-post-details {
+  color: var(--general-body-text, #333);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: justify;
+  /* 150% */
+}
+
+
+@media only screen and (max-width: 600px) {
+  .title-post-detail {
+    font-size: 25px !important;
+  }
+
+  .cover-post-details {
+    height: 50dvh;
+  }
+
+  .name-account-post-detail {
+    font-size: 15px !important;
+  }
+}
+
+
+/* // end post Detailes */
