@@ -6,6 +6,6 @@
 3-Go to the project settings and find and copy the API Content option in the API Access section <br/>
 4-Now paste the API Content in the specified place in the env file <br/>
 5-Run project 
-## npm run dev
+``` npm run dev ```
 
 
